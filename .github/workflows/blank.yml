@@ -29,5 +29,7 @@ jobs:
       id: bridgecrew
       uses: bridgecrewio/bridgecrew-action@master
       with:
-        DIRECTORY: 'terraform'
+        FILE: "./terraform/db-app.tf"
+        OUTPUT: "json"
+        SOFT-FAIL: true
 
