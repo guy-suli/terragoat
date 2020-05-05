@@ -31,5 +31,5 @@ jobs:
       with:
         FILE: "./terraform/db-app.tf"
         OUTPUT: "json"
-        SOFT-FAIL: true
+        SOFT-FAIL: "true"
 
