@@ -28,5 +28,6 @@ jobs:
     - name: Run Bridgecrew scanner
       id: checkov
       uses: bridgecrewio/bridgecrew-action@master
-
+      with:
+        DIRECTORY: 'terraform'
 
