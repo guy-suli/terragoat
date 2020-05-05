@@ -26,7 +26,7 @@ jobs:
 
     # Runs a set of commands using the runners shell
     - name: Run Bridgecrew scanner
-      id: checkov
+      id: bridgecrew
       uses: bridgecrewio/bridgecrew-action@master
       with:
         DIRECTORY: 'terraform'
