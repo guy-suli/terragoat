@@ -20,12 +20,17 @@ jobs:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@v2
 
-    # Runs a set of commands using the runners shell
-    - name: Run Bridgecrew scanner
-      id: bridgecrew
+    - name: Scan IaC directory
+      id: Bridgecrew scanner directory
       uses: bridgecrewio/bridgecrew-action@master
       with:
-        file: "./terraform/db-app.tf"
-        output: "json"
+        directory: "terraform"
         soft-fail: "true"
+
+    - name: Scan IaC file
+        id: Bridgecrew scanner file
+        uses: bridgecrewio/bridgecrew-action@master
+        with:
+          file: "./terraform/db-app.tf"
+          output: "json"
 
