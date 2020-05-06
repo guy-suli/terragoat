@@ -32,5 +32,5 @@ jobs:
       uses: bridgecrewio/bridgecrew-action@master
       with:
         file: "./terraform/db-app.tf"
-        output: "json"
+        output: "junitxml"
 
