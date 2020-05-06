@@ -33,5 +33,4 @@ jobs:
       with:
         file: "./terraform/db-app.tf"
         output: "json"
-        api-key-variable: ${{ secrets.BC_API_KEY }}
 
