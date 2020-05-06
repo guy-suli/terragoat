@@ -28,9 +28,9 @@ jobs:
         soft-fail: "true"
 
     - name: Scan IaC file
-        id: Bridgecrew scanner file
-        uses: bridgecrewio/bridgecrew-action@master
-        with:
-          file: "./terraform/db-app.tf"
-          output: "json"
+      id: Bridgecrew scanner file
+      uses: bridgecrewio/bridgecrew-action@master
+      with:
+        file: "./terraform/db-app.tf"
+        output: "json"
 
